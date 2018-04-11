@@ -1,0 +1,238 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+}
+
+.home-container {
+    background-image: url('/app/images/pattern.svg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.zipcode-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    margin: 10px;
+    transition: all .5s;
+}
+.btn-success:hover {
+    transform: scale(1.1);
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.title-header {
+  font-size: 45px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(252, 90, 44, 0.89);
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.left .link__logo {
+    text-decoration: none;
+}
+
+.left h1.header__titulo {
+    font-size: 38px;
+    color: #fff;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.dayContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 35px;
+    cursor: pointer;
+}
+
+.dayContainer .weather {
+    filter: grayscale(1);
+    transition: all .5s;
+}
+.dayContainer:hover .weather {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.forecast-header {
+    font-size: 65px;
+    color: #333;
+    font-weight: 100;
+    text-align: center;
+}
+.subheader {
+    font-size: 30px;
+    color: #333;
+    font-weight: 100;
+}
+.weather {
+    height: 130px;
+}
+
+.description-container {
+    font-size: 34px;
+    font-weight: 100;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.forescat-view {
+    position: relative;
+}
+
+.atras {
+    position: absolute;
+    left: 1.5%;
+    top: 3%;
+    background: rgba(252, 90, 44, 0.89);
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+
+
+/* Details item */
+
+.detail-item {
+    position: relative;
+}
+
+.detail-item .dayContainer {
+    cursor:  default;
+}
+.detail-item .dayContainer img {
+    filter: grayscale(0);
+}
+.detail-item .dayContainer:hover img {
+    transform: scale(1);
+}
+
+.detail__title {
+    font-weight: 400;
+    color: rgba(252, 90, 44, 0.89);
+    font-size: 55px;
+    margin: 0;
+}
+
+
+/* Error */
+.pageError {
+    position: relative;
+    margin-top: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageError img {
+    width: 100%;
+}
+.pageError p {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding:  50px 10px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .header {
+        padding: 0px 10px 15px;
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+
+
